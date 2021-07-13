@@ -18,6 +18,10 @@ public class Employer extends AbstractEntity {
     @Size(min = 1, max = 100)
     private String location;
 
+    public Employer(String location){
+        this.location = location;
+    }
+
     public Employer() {}
 
     public String getLocation() {
